@@ -1,0 +1,16 @@
+<div class="top">
+  <div class="laas_logo">
+  <img src="assets/logo_laas.png">
+  </div>
+  <div class="cnrs_logo">
+  <img src="assets/LOGO_CNRS.png" sizes="(max-width: 312px) 312px,800px">
+  </div>
+
+  <button mat-button [matMenuTriggerFor]="menu" >Menu</button>
+  <mat-menu #menu="matMenu" yPosition="below" xPosition="before" [overlapTrigger]="true">
+    <button mat-menu-item routerLink="Galerie">Galerie</button>
+    <button mat-menu-item routerLink="Histoire">Histoire</button>
+    <button mat-menu-item routerLink="Biographies">Biographies</button>
+    <button mat-menu-item routerLink="Ressources">Ressources</button>
+  </mat-menu>
+</div>
